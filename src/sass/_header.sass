@@ -2,19 +2,138 @@
   padding: 7px 0
   background: rgba(0, 0, 0, 0.2)
   color: #fff
+  &__logo
+    padding-right: 60px
+  &__right,
+  &__left
+    display: flex
+    align-items: center
+  &__right
+    position: relative
+    z-index: 10
   &__address,
   &__phone-mail
     line-height: 22px
     color: #fff
-  &__call-icon
+  &__phone-mail
+    padding-right: 60px
+  &__address
+    padding-left: 60px
+  &__call
     display: flex
-    width: 85px
-    padding: 15px 0
-    justify-content: center
-    align-items: center
-    background: rgba(255, 255, 255, 0.1)
-    border: 1px solid #FFFFFF
-    border-radius: 5px
+    justify-content: flex-end
+    padding-right: 0
+    padding-left: 60px
+    &-icon
+      display: flex
+      width: 85px
+      padding: 15px 0
+      justify-content: center
+      align-items: center
+      background: rgba(255, 255, 255, 0.1)
+      border: 1px solid #FFFFFF
+      border-radius: 5px
   &__row
     display: flex
+    justify-content: space-between
     align-items: center
+
+.menu
+  &__btn
+    display: none
+    padding: 0 16px
+    border: none
+    background: transparent
+    width: 62px
+    height: 54px
+    transform: rotate(180deg)
+    &_open
+      .menu__bar
+        &:nth-child(1)
+          transform: rotate(45deg)
+          transition: .3s ease-in
+        &:nth-child(2)
+          display: none
+        &:nth-child(3)
+          transform: rotate(-45deg)
+          transition: .3s ease-in
+
+    &:focus
+      outline: none
+
+
+  &__bar
+    display: block
+    height: 1px
+    background: #fff
+    &:nth-child(2)
+      width: 20px
+      margin-top: 14px
+      margin-bottom: 14px
+  &__contacts-mobile
+    display: none
+    font-size: 13px
+    width: 228px
+    padding: 25px 0 25px 30px
+    position: absolute
+    top: 68px
+    right: 0
+    background: #2B2B2B
+    border: 1px solid #FFFFFF
+    .header__address
+      padding-left: 0
+    .menu__contact-mobile
+      padding-bottom: 17px
+      display: flex
+      align-items: flex-start
+      &:nth-child(2)
+        &:before
+          background-position-y: -42px
+      &:nth-child(3)
+        padding-bottom: 0
+        &:before
+          background-position-y: -83px
+    .menu__contact-mobile:before
+      display: block
+      padding-right: 20px
+      content: ''
+      width: 10px
+      height: 15px
+      background-image: url("../images/burger_icons.png")
+      background-repeat: no-repeat
+  &__open
+    display: block
+
+      
+
+
+
+@media screen and (max-width: 992px)
+  .header
+    &__logo
+      padding-right: 10px
+    &__address
+      padding-left: 10px
+    &__phone-mail
+      padding-right: 10px
+    &__call
+      padding-left: 10px
+@media screen and (max-width: 668px)
+  .header
+    &__logo
+
+    &__address
+      display: none
+    &__phone-mail
+      display: none
+    &__call
+      padding-left: 10px
+  .menu
+    &__btn
+      display: block
+
+
+  
+
+
+  
