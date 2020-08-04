@@ -37,7 +37,7 @@
             <a href="mailto:info@antek-pro.ru" class="footer__email">info@antek-pro.ru</a>
           </div>
           <div class="header__call">
-            <a href="#" class="header__call-icon">
+            <a href="#modal-request" data-toggle="modal" class="header__call-icon">
               <svg width="27" height="26" viewBox="0 0 27 26" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path
                     d="M16.485 5.49869C17.654 5.71648 18.7284 6.26242 19.5706 7.06662C20.4128 7.87082 20.9845 8.8967 21.2126 10.013L16.485 5.49869ZM16.485 0.927277C18.9138 1.18492 21.1786 2.22347 22.9076 3.87242C24.6367 5.52137 25.7271 7.6827 26 10.0015L16.485 0.927277ZM24.8031 19.1215V22.5501C24.8045 22.8684 24.7362 23.1834 24.6027 23.475C24.4692 23.7667 24.2733 24.0285 24.0277 24.2436C23.7821 24.4588 23.4921 24.6226 23.1763 24.7246C22.8606 24.8266 22.526 24.8644 22.194 24.8358C18.5111 24.4537 14.9734 23.252 11.8652 21.3272C8.97337 19.5726 6.52162 17.2314 4.68405 14.4701C2.66135 11.4886 1.40257 8.09411 1.00971 4.56155C0.979806 4.24552 1.01914 3.927 1.12521 3.62627C1.23128 3.32554 1.40177 3.0492 1.62581 2.81484C1.84986 2.58048 2.12255 2.39323 2.42654 2.26501C2.73052 2.1368 3.05913 2.07043 3.39145 2.07013H6.98201C7.56285 2.06467 8.12595 2.26108 8.56636 2.62274C9.00676 2.9844 9.29442 3.48664 9.37572 4.03584C9.52726 5.13306 9.80832 6.21038 10.2135 7.24726C10.3745 7.65632 10.4094 8.10088 10.3139 8.52826C10.2185 8.95565 9.99672 9.34796 9.67493 9.65869L8.15493 11.1101C9.85871 13.9713 12.3397 16.3403 15.336 17.9672L16.856 16.5158C17.1815 16.2085 17.5923 15.9968 18.0399 15.9056C18.4875 15.8145 18.953 15.8478 19.3814 16.0015C20.4673 16.3884 21.5955 16.6568 22.7446 16.8015C23.326 16.8798 23.8569 17.1595 24.2365 17.5872C24.616 18.015 24.8177 18.561 24.8031 19.1215Z"
@@ -157,6 +157,51 @@
       </div>
     </div>
   </footer>
+</div>
+<div class="modal modal_request fade" id="modal-request" tabindex="-1" role="dialog"
+     aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+      </button>
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Оставьте заявку для консультации</h5>
+
+      </div>
+      <div class="modal-body">
+        <form action="#" class="modal__form">
+          <div class="form-group">
+            <input type="text" class="modal__form-input modal__form-input_text" placeholder="Телефон:">
+          </div>
+          <div class="form-group">
+            <button type="submit" class="btn modal__form-input modal__form-input_submit">Оставить
+              заявку <span class="btn__arrow"></span></button>
+          </div>
+          <div class="form-group">
+            <p class="modal__form-agree">
+              Нажимая даную кнопку вы соглашаетесь с <a href="#">политикой конфиденциальности</a>
+            </p>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal modal_success fade" id="modal-success" tabindex="-1" role="dialog"
+     aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+      </button>
+      <div class="modal-header">
+        <h5 class="modal-title">Спасибо за заявку!</h5>
+
+      </div>
+      <div class="modal-body">
+        <p class="modal-title">Мы свяжемся с Вами в течении 60 минут!</p>
+      </div>
+    </div>
+  </div>
 </div>
 <script src="js/jquery-3.4.1.min.js"></script>
 <script src="js/polyfill.min.js"></script>

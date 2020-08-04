@@ -1,0 +1,74 @@
+.modal
+  backdrop-filter: blur(2px)
+  background-color: rgba(128, 128, 128, 0.8)
+  color: #fff
+  &-title
+    font-size: 20px
+  &-dialog
+    max-width: 610px
+    top: 20vh
+  &-header
+    padding: 15px
+    font-weight: 500
+    font-size: 20px
+    border-bottom: 0
+  &-body
+    padding: 15px
+
+  .close
+    position: absolute
+    right: 15px
+    top: 15px
+    color: #fff
+    text-shadow: none
+    opacity: 1
+    text-align: right
+    width: 13px
+    height: 13px
+    background-image: url("../images/times.png")
+    background-repeat: no-repeat
+  .form-group
+    width: 295px
+    margin-bottom: 20px
+  &-content
+    padding: 15px
+    border-radius: unset
+    border: 2px solid #FFFFFF
+    background-color: #2B2B2B
+    background-image: url("../images/buildings.png")
+    background-repeat: no-repeat
+    background-position: right bottom
+  &__form
+    &-input
+      width: 100%
+      background: rgba(255, 255, 255, 0.1)
+      border: 2px solid #C9CACC
+      color: #fff
+      font-weight: normal
+      font-size: 16px
+      padding: 18px 12px
+      &:focus
+        outline: none
+      &::placeholder
+        color: #C9CACC
+    &-agree
+      font-size: 13px
+      line-height: 17px
+      a
+        text-decoration: underline
+        color: #fff
+        &:hover,
+        &:focus
+          color: #8D8D8D
+  &_success
+    .modal-body
+      padding-top: 55px
+      padding-bottom: 95px
+      text-align: center
+    .modal-header
+      padding-top: 55px
+      justify-content: center
+    .modal-title
+      text-align: center
+    .modal-content
+      background-position: center bottom

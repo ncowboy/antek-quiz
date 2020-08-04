@@ -10,10 +10,14 @@ document.documentElement.style.setProperty('--vh', `${vh}px`);
 //Burger menu
 
 $('.menu__btn').click(function () {
-   $('.menu__contacts-mobile').toggleClass('menu__open')
-   $('.menu__btn').toggleClass('menu__btn_open')
+  $('.menu__contacts-mobile').toggleClass('menu__open')
+  $('.menu__btn').toggleClass('menu__btn_open')
 });
 
-$(document.body).click(function () {
-  console.log('dsfdsfsd');
+
+$('#modal-request').on('hidden.bs.modal', function () {
+  setTimeout(function () {
+    $('#modal-success').modal('show');
+  }, 1000);
 });
+

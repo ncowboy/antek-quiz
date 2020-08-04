@@ -33,6 +33,12 @@
       background: rgba(255, 255, 255, 0.1)
       border: 1px solid #FFFFFF
       border-radius: 5px
+      &:hover,
+      &:focus
+        background-color: hsla(0,0%,100%,.8)
+        transition: $transition-default
+        path
+          stroke: #000
   &__row
     display: flex
     justify-content: space-between
@@ -47,16 +53,6 @@
     width: 62px
     height: 54px
     transform: rotate(180deg)
-    &_open
-      .menu__bar
-        &:nth-child(1)
-          transform: rotate(45deg)
-          transition: .3s ease-in
-        &:nth-child(2)
-          display: none
-        &:nth-child(3)
-          transform: rotate(-45deg)
-          transition: .3s ease-in
 
     &:focus
       outline: none
