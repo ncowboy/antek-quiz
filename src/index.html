@@ -239,7 +239,7 @@
         </button>
         <div class="modal-body">
           <form class="quiz__form" action="#" oninput="resultSquare.value = quizSquare.value">
-            <div class="quiz__block" data-block="1" >
+            <div class="quiz__block" data-block="1" style="display: none" >
               <p class="quiz__header">1. Укажите площадь проектируемого объекта:</p>
               <div class="quiz__square">
                 <input class="quiz__input quiz__input_range" type="range" name="quizSquare" id="quiz-square"
@@ -319,6 +319,127 @@
                   <span class="btn__arrow btn__arrow_prev"></span>Назад
                 </div>
                 <div class="btn quiz__btn quiz__btn_next btn_inactive" data-slide="next" data-target="3"
+                     disabled="disabled">Следующий
+                  вопрос
+                  <span class="btn__arrow"></span>
+                </div>
+              </div>
+
+            </div>
+            <div class="quiz__block" data-block="3" style="display: none;" >
+              <p class="quiz__header">3. Укажите этажность объекта:</p>
+              <div class="form-check">
+                <div class="quiz__check-wrapper col-md-3">
+                  <input name="quiz-flat" class="quiz__check" type="radio" id="flat_1"
+                         value="1">
+                  <label class="form-check-label" for="flat_1">
+                    <span class="radio__custom"></span>
+                    1</label>
+                </div>
+                <div class="quiz__check-wrapper col-md-3">
+                  <input name="quiz-flat" class="quiz__check" type="radio" id="flat_2"
+                         value="admin">
+                  <label class="form-check-label" for="flat_2">
+                    <span class="radio__custom"></span>
+                    2</label>
+                </div>
+                <div class="quiz__check-wrapper col-md-3">
+                  <input name="quiz-flat" class="quiz__check" type="radio" id="flat_3"
+                         value="multiple">
+                  <label class="form-check-label" for="flat_3">
+                    <span class="radio__custom"></span>
+                    3</label>
+                </div>
+                <div class="quiz__check-wrapper col-md-3">
+                  <input name="quiz-flat" class="quiz__check" type="radio" id="flat_4"
+                         value="4">
+                  <label class="form-check-label" for="flat_4">
+                    <span class="radio__custom"></span>
+                    4</label>
+                </div>
+
+                <div class="quiz__check-wrapper col-md-3">
+                  <input name="quiz-flat" class="quiz__check" type="radio" id="flat_5"
+                         value="5">
+                  <label class="form-check-label" for="flat_5">
+                    <span class="radio__custom"></span>
+                    5</label>
+                </div>
+                <div class="quiz__check-wrapper col-md-3">
+                  <input name="quiz-flat" class="quiz__check" type="radio" id="flat_more"
+                         value="more">
+                  <label class="form-check-label" for="flat_more">
+                    <span class="radio__custom"></span>
+                    Более 5ти</label>
+                </div>
+              </div>
+              <div class="quiz__buttons-block">
+                <div class="btn quiz__btn quiz__btn_prev" data-slide="prev" data-target="2">
+                  <span class="btn__arrow btn__arrow_prev"></span>Назад
+                </div>
+                <div class="btn quiz__btn quiz__btn_next btn_inactive" data-slide="next" data-target="4"
+                     disabled="disabled">Следующий
+                  вопрос
+                  <span class="btn__arrow"></span>
+                </div>
+              </div>
+
+            </div>
+            <div class="quiz__block" data-block="4"  >
+              <p class="quiz__header">4. Какие документы у вас имеются: <br>
+              <span>выберите несколько вариантов</span></p>
+              <div class="form-check">
+                <div class="quiz__check-wrapper col-md-3">
+                  <input name="quiz-flat" class="quiz__check" type="checkbox" id="docs_gpzu"
+                         value="1">
+                  <label class="form-check-label" for="docs_gpzu">
+                    <span class="radio__custom"></span>
+                    ГПЗУ</label>
+                </div>
+                <div class="quiz__check-wrapper col-md-3">
+                  <input name="quiz-flat" class="quiz__check" type="radio" id="zu_docs"
+                         value="zu_docs">
+                  <label class="form-check-label" for="zu_docs">
+                    <span class="radio__custom"></span>
+                    Правоустанавливающие документы на з.у.</label>
+                </div>
+                <div class="quiz__check-wrapper col-md-3">
+                  <input name="quiz-flat" class="quiz__check" type="radio" id="flat_3"
+                         value="multiple">
+                  <label class="form-check-label" for="flat_3">
+                    <span class="radio__custom"></span>
+                    3</label>
+                </div>
+                <div class="quiz__check-wrapper col-md-3">
+                  <input name="quiz-flat" class="quiz__check" type="radio" id="flat_4"
+                         value="4">
+                  <label class="form-check-label" for="flat_4">
+                    <span class="radio__custom"></span>
+                    4</label>
+                </div>
+
+                <div class="quiz__check-wrapper col-md-3">
+                  <input name="quiz-flat" class="quiz__check" type="radio" id="flat_5"
+                         value="5">
+                  <label class="form-check-label" for="flat_5">
+                    <span class="radio__custom"></span>
+                    5</label>
+                </div>
+                <div class="quiz__check-wrapper col-md-3">
+                  <input name="quiz-flat" class="quiz__check" type="radio" id="flat_more"
+                         value="more">
+                  <label class="form-check-label" for="flat_more">
+                    <span class="radio__custom"></span>
+                    Более 5ти</label>
+                </div>
+              </div>
+
+
+              <div class="quiz__buttons-block">
+                <div class="btn quiz__btn quiz__btn_prev" data-slide="prev" data-target="2">
+                  <span class="btn__arrow btn__arrow_prev"></span>Назад
+                </div>
+                <div class="btn quiz__btn quiz__btn_next btn_inactive" data-slide="next" data-target="4"
                      disabled="disabled">Следующий
                   вопрос
                   <span class="btn__arrow"></span>
