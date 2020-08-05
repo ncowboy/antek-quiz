@@ -11,7 +11,7 @@
 <div class="wrapper">
   <header class="header">
     <div class="container">
-      <div class="row header__row">
+      <div class="header__row">
         <div class="header__left">
           <div class="header__logo">
             <svg width="82" height="56" viewBox="0 0 82 56" fill="none" xmlns="http://www.w3.org/2000/svg"
@@ -70,13 +70,13 @@
   <div class="content">
     <div class="container">
       <div class="row">
-        <div class="content__text col-md-8">
+        <div class="content__text col-xl-8 col-lg-8 col-md-8 col-sm-12">
           <h1>
             Получим <strong>свидетельство АГО</strong> в Московской области <strong>за 15 дней</strong> с гарантией
             результата по
             договору
           </h1>
-          <div class="content__advantages">
+          <div class="content__advantages content__advantages_desktop-visible">
             <div class="row">
               <div class="content__advantage col-md-6">
                 <div class="content__advantage-icon" style="background-image: url('images/icon-check.svg')"></div>
@@ -98,12 +98,12 @@
             </div>
           </div>
         </div>
-        <div class="content__image col-md-4">
+        <div class="content__image content__image_desktop-visible col-md-4">
           <img src="images/papers.png" alt="свидетельство АГО">
         </div>
       </div>
       <div class="row row_bottom row_v-center">
-        <button class="content__btn col-md-5">Узнать стоимость
+        <button class="content__btn col-md-5 col-sm-12 " data-toggle="modal" data-target="#modal-quiz">Узнать стоимость
           <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path
                 d="M18.7431 40C19.4386 40.0021 20.1188 39.8015 20.6957 39.4241C20.7504 39.3882 20.7973 39.3421 20.8336 39.2886C20.87 39.2351 20.8952 39.1752 20.9077 39.1122C20.9203 39.0492 20.9199 38.9845 20.9067 38.9216C20.8935 38.8588 20.8677 38.7991 20.8307 38.7459C20.7937 38.6928 20.7464 38.6472 20.6913 38.6119C20.6362 38.5765 20.5745 38.5521 20.5097 38.5399C20.4449 38.5277 20.3783 38.528 20.3136 38.5409C20.2489 38.5537 20.1875 38.5788 20.1328 38.6147C19.7225 38.8844 19.2384 39.028 18.7431 39.0271H3.48698C2.8281 39.0262 2.19649 38.7714 1.73067 38.3186C1.26485 37.8658 1.00286 37.252 1.00217 36.6118V34.5416H13.2938C13.4236 34.5364 13.5462 34.4826 13.6361 34.3916C13.7259 34.3005 13.7761 34.1792 13.7761 34.0531C13.7761 33.9269 13.7259 33.8056 13.6361 33.7146C13.5462 33.6235 13.4236 33.5697 13.2938 33.5645H1.00567V6.43977H19.4734C19.6032 6.4345 19.7258 6.38072 19.8157 6.28967C19.9055 6.19862 19.9557 6.07734 19.9557 5.95118C19.9557 5.82502 19.9055 5.70374 19.8157 5.61269C19.7258 5.52164 19.6032 5.46786 19.4734 5.4626H1.00567V3.3924C1.00637 2.7522 1.26836 2.13839 1.73418 1.68562C2.19999 1.23285 2.83161 0.97807 3.49049 0.977168H18.7466C19.4047 0.979195 20.0352 1.23447 20.5001 1.68712C20.9649 2.13977 21.2263 2.75293 21.227 3.3924V20.6458C21.2242 20.7116 21.2351 20.7774 21.2591 20.8391C21.2831 20.9007 21.3197 20.9571 21.3666 21.0047C21.4136 21.0522 21.47 21.0901 21.5324 21.116C21.5948 21.1418 21.662 21.1552 21.7299 21.1552C21.7977 21.1552 21.8649 21.1418 21.9273 21.116C21.9897 21.0901 22.0461 21.0522 22.0931 21.0047C22.14 20.9571 22.1766 20.9007 22.2006 20.8391C22.2246 20.7774 22.2355 20.7116 22.2327 20.6458V3.3924C22.2318 2.49296 21.8636 1.63061 21.2091 0.994607C20.5545 0.358604 19.667 0.00090215 18.7413 0H3.48523C2.56061 0.00247886 1.67468 0.360877 1.02145 0.996709C0.368219 1.63254 0.00092435 2.49399 0 3.3924V36.6076C0.000928055 37.5069 0.368945 38.3691 1.02331 39.0051C1.67768 39.6411 2.56496 39.9989 3.49049 40H18.7431Z"
@@ -134,8 +134,35 @@
                 fill="white"/>
           </svg>
         </button>
-        <p class="content__quiz-text col-md-7">Ответьте на 6 простых вопросов и узнайте стоимость и сроки получения
+        <p class="content__quiz-text col-md-7 col-sm-12">Ответьте на 6 простых вопросов и узнайте стоимость и сроки
+          получения
           свидетельства АГО<strong> + ПОДАРОК </strong>- чек-лист “Как выбрать земельный участок”</p>
+      </div>
+      <div class="row row_desktop-hidden">
+        <div class="content__advantages content__advantages_desktop-hidden col-md-12 col-sm-6 ">
+          <div class="row">
+            <div class="content__advantage col-lg-6 col-md-12">
+              <div class="content__advantage-icon" style="background-image: url('images/icon-check.svg')"></div>
+              <div class="content__advantage-text">Отличные отношения с государственными органами</div>
+            </div>
+            <div class="content__advantage col-lg-6 col-md-12">
+              <div class="content__advantage-icon" style="background-image: url('images/icon-buildings.svg')"></div>
+              <div class="content__advantage-text">Уникальная архитектура в рамках вашего бюджета</div>
+            </div>
+            <div class="content__advantage col-lg-6 col-md-12">
+              <div class="content__advantage-icon" style="background-image: url('images/icon-calendar.svg')"></div>
+              <div class="content__advantage-text">Экспресс услуга. Сроки получения от 3 дней</div>
+            </div>
+            <div class="content__advantage col-lg-6 col-md-12">
+              <div class="content__advantage-icon" style="background-image: url('images/icon-dollar.svg')"></div>
+              <div class="content__advantage-text">Цены ниже рынка на 15%</div>
+            </div>
+
+          </div>
+        </div>
+        <div class="content__image content__image_desktop-hidden col-md-12 col-sm-6">
+          <img src="images/papers_tablet.png" alt="свидетельство АГО">
+        </div>
       </div>
     </div>
   </div>
@@ -203,6 +230,210 @@
     </div>
   </div>
 </div>
+<div class="modal modal_quiz fade" id="modal-quiz" tabindex="-1" role="dialog"
+     aria-hidden="true">
+  <div class="container">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+        </button>
+        <div class="modal-body">
+          <form class="quiz__form" action="#" oninput="resultSquare.value = quizSquare.value">
+            <div class="quiz__block" data-block="1" >
+              <p class="quiz__header">1. Укажите площадь проектируемого объекта:</p>
+              <div class="quiz__square">
+                <input class="quiz__input quiz__input_range" type="range" name="quizSquare" id="quiz-square"
+                       min="0" max="1000" value="0" step="10">
+                <output class="quiz__output" name="resultSquare" for="quiSquare">0</output>
+                м<sup>2</sup>
+              </div>
+              <div class="quiz__buttons-block">
+                <div class="btn quiz__btn btn_inactive" data-slide="next" data-target="2" disabled="disabled">Следующий
+                  вопрос
+                  <span class="btn__arrow"></span></div>
+              </div>
+
+            </div>
+            <div class="quiz__block" data-block="2" style="display: none;">
+              <p class="quiz__header">2. Укажите назначение проектируемого объекта:</p>
+              <div class="form-check">
+                <div class="quiz__check-wrapper col-md-3">
+                  <input name="quiz-assign" class="quiz__check" type="radio" id="type__living"
+                         value="living">
+                  <label class="form-check-label" for="type__living">
+                    <span class="radio__custom"></span>
+                    Жилое</label>
+                </div>
+                <div class="quiz__check-wrapper col-md-3">
+                  <input name="quiz-assign" class="quiz__check" type="radio" id="type__admin"
+                         value="admin">
+                  <label class="form-check-label" for="type__admin">
+                    <span class="radio__custom"></span>
+                    Административное</label>
+                </div>
+                <div class="quiz__check-wrapper col-md-3">
+                  <input name="quiz-assign" class="quiz__check" type="radio" id="type__multiple"
+                         value="multiple">
+                  <label class="form-check-label" for="type__multiple">
+                    <span class="radio__custom"></span>
+                    Многофункциональное</label>
+                </div>
+                <div class="quiz__check-wrapper col-md-3">
+                  <input name="quiz-assign" class="quiz__check" type="radio" id="type__road"
+                         value="multiple">
+                  <label class="form-check-label" for="type__road">
+                    <span class="radio__custom"></span>
+                    Объект дорожного сервиса</label>
+                </div>
+                <div class="quiz__check-wrapper col-md-3">
+                  <input name="quiz-assign" class="quiz__check" type="radio" id="type__public"
+                         value="multiple">
+                  <label class="form-check-label" for="type__public">
+                    <span class="radio__custom"></span>
+                    Общественное</label>
+                </div>
+                <div class="quiz__check-wrapper col-md-3">
+                  <input name="quiz-assign" class="quiz__check" type="radio" id="type__fabric"
+                         value="multiple">
+                  <label class="form-check-label" for="type__fabric">
+                    <span class="radio__custom"></span>
+                    Производственное</label>
+                </div>
+                <div class="quiz__check-wrapper col-md-3">
+                  <input name="quiz-assign" class="quiz__check" type="radio" id="type__storage"
+                         value="multiple">
+                  <label class="form-check-label" for="type__storage">
+                    <span class="radio__custom"></span>
+                    Складское</label>
+                </div>
+                <div class="quiz__check-wrapper col-md-3">
+                  <input name="quiz-assign" class="quiz__check" type="radio" id="type__other"
+                         value="other">
+                  <label class="form-check-label" for="type__other">
+                    <span class="radio__custom"></span>
+                    Другое</label>
+                </div>
+              </div>
+              <div class="quiz__buttons-block">
+                <div class="btn quiz__btn quiz__btn_prev" data-slide="prev" data-target="1">
+                  <span class="btn__arrow btn__arrow_prev"></span>Назад
+                </div>
+                <div class="btn quiz__btn quiz__btn_next btn_inactive" data-slide="next" data-target="3"
+                     disabled="disabled">Следующий
+                  вопрос
+                  <span class="btn__arrow"></span>
+                </div>
+              </div>
+
+            </div>
+          </form>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<style>
+  input[type=range] {
+    margin: 16px 20px 16px 0;
+    background-color: transparent;
+    -webkit-appearance: none;
+  }
+
+  input[type=range]:focus {
+    outline: none;
+  }
+
+  input[type=range]::-webkit-slider-runnable-track {
+    background: #000000;
+    width: 100%;
+    height: 2px;
+    cursor: pointer;
+  }
+
+  input[type=range]::-webkit-slider-thumb {
+    margin-top: -16.2px;
+    width: 34px;
+    height: 34px;
+    background: #b92e1c;
+    border: 2px solid #000000;
+    cursor: pointer;
+    -webkit-appearance: none;
+  }
+
+  input[type=range]:focus::-webkit-slider-runnable-track {
+    background: #0f0f0f;
+  }
+
+  input[type=range]::-moz-range-track {
+    background: #000000;
+    border: 0.2px solid #010101;
+    border-radius: 1.3px;
+    height: 2px;
+    cursor: pointer;
+  }
+
+  input[type=range]::-moz-range-thumb {
+    width: 34px;
+    height: 34px;
+    background: #b92e1c;
+    border: 2px solid #000000;
+    cursor: pointer;
+  }
+
+  input[type=range]::-ms-track {
+    background: transparent;
+    border-color: transparent;
+    border-width: 17px 0;
+    color: transparent;
+    width: 100%;
+    height: 2px;
+    cursor: pointer;
+  }
+
+  input[type=range]::-ms-fill-lower {
+    background: #000000;
+    border: 0.2px solid #010101;
+    border-radius: 2.6px;
+  }
+
+  input[type=range]::-ms-fill-upper {
+    background: #000000;
+    border: 0.2px solid #010101;
+    border-radius: 2.6px;
+  }
+
+  input[type=range]::-ms-thumb {
+    width: 34px;
+    height: 34px;
+    background: #b92e1c;
+    border: 2px solid #000000;
+    cursor: pointer;
+    margin-top: 0px;
+    /*Needed to keep the Edge thumb centred*/
+  }
+
+  input[type=range]:focus::-ms-fill-lower {
+    background: #000000;
+  }
+
+  input[type=range]:focus::-ms-fill-upper {
+    background: #0f0f0f;
+  }
+
+  /*TODO: Use one of the selectors from https://stackoverflow.com/a/20541859/7077589 and figure out
+  how to remove the virtical space around the range input in IE*/
+  @supports (-ms-ime-align:auto) {
+    /* Pre-Chromium Edge only styles, selector taken from hhttps://stackoverflow.com/a/32202953/7077589 */
+    input[type=range] {
+      margin: 0;
+      /*Edge starts the margin from the thumb, not the track as other browsers do*/
+    }
+  }
+
+</style>
+
+
 <script src="js/jquery-3.4.1.min.js"></script>
 <script src="js/polyfill.min.js"></script>
 <script src="js/bootstrap.min.js"></script>

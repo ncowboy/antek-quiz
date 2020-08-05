@@ -1,0 +1,73 @@
+.quiz
+  &__block
+    -webkit-animation-name: fadeInRight
+    animation-name: fadeInRight
+    -webkit-animation-duration: 1.4s
+    animation-duration: .4s
+    -webkit-animation-fill-mode: both
+    animation-fill-mode: both
+    .form-check
+      display: flex
+      flex-wrap: wrap
+      padding-left: 0
+    .radio__custom
+      display: block
+      position: relative
+      width: 28px
+      height: 28px
+      margin-right: 15px
+      flex-shrink: 0
+      border: 2px solid #2E2E2E
+    .form-check-label
+      display: flex
+      align-items: center
+
+  &__header
+    padding-bottom: 70px
+    font-weight: 500
+    font-size: 25px
+  &__square
+    display: flex
+    align-items: center
+  &__output
+    width: 105px
+    height: 45px
+    display: flex
+    justify-content: center
+    align-items: center
+    margin-right: 20px
+    background: #E5E5E5
+    border-radius: 10px
+  &__input
+    &_range
+      width: 610px
+      margin-right: 20px
+  &__buttons-block
+    padding-top: 105px
+    display: flex
+    justify-content: flex-start
+  &__check
+    display: none
+    &:checked ~ label span:before
+      content: ''
+      background-color: $bg-red
+      display: block
+      width: 12px
+      height: 12px
+      position: absolute
+      top: 6px
+      left: 6px
+
+    &-wrapper
+      padding-bottom: 40px
+  &__btn
+    max-width: none
+    width: 295px
+    &_next
+      margin-left: 10px
+    &_prev
+      margin-right: 10px
+      background-color: #2B2B2B!important
+
+
+
