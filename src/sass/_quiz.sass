@@ -7,8 +7,10 @@
     -webkit-animation-fill-mode: both
     animation-fill-mode: both
     .form-check
-      display: flex
-      flex-wrap: wrap
+      column-width: 200px
+      column-count: 3
+      column-gap: 8px
+      
       padding-left: 0
     .radio__custom
       display: block
@@ -21,11 +23,27 @@
     .form-check-label
       display: flex
       align-items: center
+    &_type
+      .form-check
+          column-count: 4
+    &_docs
+      .form-check
+          column-count: 2
+    &_square
+      .quiz__header
+        padding-bottom: 70px
+
 
   &__header
-    padding-bottom: 70px
+    padding-bottom: 35px
     font-weight: 500
     font-size: 25px
+    line-height: 40px
+    span
+      display: block
+      padding-top: 9px
+      font-size: 16px
+
   &__square
     display: flex
     align-items: center
@@ -39,9 +57,27 @@
     background: #E5E5E5
     border-radius: 10px
   &__input
+    width: 400px
+    padding: 14px
+    background: #F9F9F9
+    border: 1px solid #D5D7DD
+    box-sizing: border-box
+    border-radius: 5px
+    &::placeholder
+      color: #D5D7DD
     &_range
       width: 610px
       margin-right: 20px
+      border: 0
+  &__textarea
+    width: 673px
+    padding: 15px
+    border: 2px solid #D5D7DD
+    background: #F9F9F9
+    border-radius: 5px
+    &::placeholder
+      color: #D5D7DD
+
   &__buttons-block
     padding-top: 105px
     display: flex
@@ -59,7 +95,8 @@
       left: 6px
 
     &-wrapper
-      padding-bottom: 40px
+      padding-bottom: 0
+      height: 60px
   &__btn
     max-width: none
     width: 295px
@@ -68,6 +105,196 @@
     &_prev
       margin-right: 10px
       background-color: #2B2B2B!important
+    &_result
+      margin-left: 0
+      margin-top: 25px
+
+  &__agree
+    font-size: 13px
+    line-height: 17px
+    padding-top: 10px
+    a
+      text-decoration: underline
+      color: #000
+      &:hover,
+      &:focus
+        color: $bg-red
+        transition: $transition-default
+  &__result
+    &-left,
+    &-right
+      flex-shrink: 0
+      width: 50%
+    &-wrapper
+      display: flex
+    &-image
+      text-align: center
+      img
+        width: 100%
+    &-text
+      position: relative
+      bottom: 36px
+      padding: 10px
+      background: rgba(255, 255, 255, 0.7)
+  &__success
+    &-wrapper
+      display: flex
+    &-right,
+    &-left
+      flex-shrink: 0
+    &-right
+      padding-left: 20px
+      width: 48%
+      img
+        width: 100%
+    &-left
+      padding-right: 20px
+      width: 52%
+
+    &-file
+      margin-top: -20px
+      padding: 30px
+      background: #2B2B2B
+      color: #fff
+      font-size: 16px
+      line-height: 22px
+    &-subscribe
+      padding-top: 30px
+    &-socials
+      display: flex
+      position: relative
+      padding-top: 60px
+      left: -12px
+      top: -12px
+  &__social
+    &-link
+      display: block
+      width: 74px
+      height: 74px
+      flex-shrink: 0
+      margin-right: 60px
+      background-image: url("../images/socials-dark.png")
+      background-repeat: no-repeat
+      background-position-y: center
+      background-position-x: 11px
+      border-radius: 50%
+      &:nth-child(2)
+        background-position-x: -171px
+      &:nth-child(3)
+        background-position-x: -353px
+      &:hover,
+      &:focus
+        background-color: $bg-red
+        transition: $transition-default
+        background-image: url("../images/socials-light-lg.png")
+
+
+@media screen and (max-width: 992px)
+  .quiz
+    &__btn
+      max-width: 256px!important
+    &__textarea
+      width: 100%
+    &__result
+      &-wrapper
+        flex-direction: column
+      &-left,
+      &-right
+        width: 100%
+    &__success
+      &-wrapper
+        flex-direction: column
+      &-left,
+      &-right
+        width: 100%
+      &-file
+        padding: 19px
+
+@media screen and (max-width: 576px)
+  .quiz
+    &__header
+      font-size: 15px
+      line-height: 22px
+    &__block
+      &_square
+        .quiz__header
+          padding-bottom: 30px
+    &__btn
+      max-width: 186px!important
+      font-size: 13px
+
+    &__input
+      width: 100%
+    &__textarea
+    &__square
+      font-size: 13px
+      sup
+        font-size: 10px
+
+    &__result
+      &-file
+        padding: 19px
+      &-image
+        margin-top: 6px
+      &-text
+        font-size: 13px
+        background: #2B2B2B
+        border-radius: 0px 0px 5px 5px
+        color: #fff
+    &__input
+      &_range
+        margin-top: 0
+        margin-bottom: 0
+        margin-right: 10px
+    &__output
+      width: 53px
+      height: 38px
+      margin-right: 10px
+      flex-shrink: 0
+    &__block
+      .form-check
+        font-size: 13px
+      .radio__custom
+        width: 24px
+        height: 24px
+    &__check
+      &-wrapper
+        height: auto
+        padding-bottom: 20px
+      &:checked~label span:before
+        top: 4px
+        left: 4px
+    &__buttons
+      &-block
+        flex-direction: column
+        padding-top: 40px
+        .btn
+          margin-left: 0
+          margin-right: 0
+          &:nth-child(1)
+            margin-bottom: 10px
+    &__success
+      &-wrapper
+        .quiz__header
+          &:nth-child(1)
+            padding-bottom: 0
+      &-file
+        font-size: 13px
+        padding: 7px 10px
+      &-subscribe
+        font-size: 13px
+      &-socials
+        justify-content: space-between
+    &__social-link
+      margin-right: 0
+
+
+        
+
+      
+
+
+
 
 
 

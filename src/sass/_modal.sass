@@ -85,9 +85,23 @@
       background-image: url("../images/quiz-bg.png")
       background-size: cover
       background-repeat: no-repeat
-      padding-top: 115px
-      padding-left: 100px
-      padding-bottom: 170px
+      padding: 115px 80px 90px 100px
+
     .close
       background-image: url("../images/times-dark.png")
       z-index: 10
+    .form-group
+      margin-bottom: 10px
+
+@media screen and (max-width: 992px)
+  .modal_quiz
+    .modal-content
+      padding: 100px 50px
+@media screen and (max-width: 576px)
+  .modal_quiz
+    .modal-content
+      padding: 48px 18px
+    .modal-dialog
+      margin: 0
+    .modal-body
+      padding: 0

@@ -24,7 +24,7 @@
   &__socials
     position: relative
     display: flex
-    //padding-bottom: 10px
+
   &__social
     &-icon
       display: block
@@ -46,6 +46,11 @@
         background-color: $bg-red
         border-radius: 50%
         transition: background-color $transition-default
+@media screen and (max-width: 992px)
+  .footer
+    &__social
+      &-icon
+        margin: 0 31px
 @media screen and (max-width: 576px)
   .footer
     padding-top: 0!important

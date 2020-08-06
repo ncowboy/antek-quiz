@@ -206,7 +206,7 @@
           </div>
           <div class="form-group">
             <p class="modal__form-agree">
-              Нажимая даную кнопку вы соглашаетесь с <a href="#">политикой конфиденциальности</a>
+              Нажимая даную кнопку, вы соглашаетесь с <a href="#">политикой конфиденциальности</a>
             </p>
           </div>
         </form>
@@ -239,7 +239,7 @@
         </button>
         <div class="modal-body">
           <form class="quiz__form" action="#" oninput="resultSquare.value = quizSquare.value">
-            <div class="quiz__block" data-block="1" style="display: none" >
+            <div class="quiz__block quiz__block_square" data-block="1">
               <p class="quiz__header">1. Укажите площадь проектируемого объекта:</p>
               <div class="quiz__square">
                 <input class="quiz__input quiz__input_range" type="range" name="quizSquare" id="quiz-square"
@@ -254,59 +254,60 @@
               </div>
 
             </div>
-            <div class="quiz__block" data-block="2" style="display: none;">
+            <div class="quiz__block quiz__block_type" data-block="2" style="display: none;">
               <p class="quiz__header">2. Укажите назначение проектируемого объекта:</p>
               <div class="form-check">
-                <div class="quiz__check-wrapper col-md-3">
+                <div class="quiz__check-wrapper">
                   <input name="quiz-assign" class="quiz__check" type="radio" id="type__living"
                          value="living">
                   <label class="form-check-label" for="type__living">
                     <span class="radio__custom"></span>
                     Жилое</label>
                 </div>
-                <div class="quiz__check-wrapper col-md-3">
-                  <input name="quiz-assign" class="quiz__check" type="radio" id="type__admin"
-                         value="admin">
-                  <label class="form-check-label" for="type__admin">
-                    <span class="radio__custom"></span>
-                    Административное</label>
-                </div>
-                <div class="quiz__check-wrapper col-md-3">
-                  <input name="quiz-assign" class="quiz__check" type="radio" id="type__multiple"
-                         value="multiple">
-                  <label class="form-check-label" for="type__multiple">
-                    <span class="radio__custom"></span>
-                    Многофункциональное</label>
-                </div>
-                <div class="quiz__check-wrapper col-md-3">
-                  <input name="quiz-assign" class="quiz__check" type="radio" id="type__road"
-                         value="multiple">
-                  <label class="form-check-label" for="type__road">
-                    <span class="radio__custom"></span>
-                    Объект дорожного сервиса</label>
-                </div>
-                <div class="quiz__check-wrapper col-md-3">
+                <div class="quiz__check-wrapper">
                   <input name="quiz-assign" class="quiz__check" type="radio" id="type__public"
                          value="multiple">
                   <label class="form-check-label" for="type__public">
                     <span class="radio__custom"></span>
                     Общественное</label>
                 </div>
-                <div class="quiz__check-wrapper col-md-3">
+                <div class="quiz__check-wrapper">
+                  <input name="quiz-assign" class="quiz__check" type="radio" id="type__admin"
+                         value="admin">
+                  <label class="form-check-label" for="type__admin">
+                    <span class="radio__custom"></span>
+                    Административное</label>
+                </div>
+                <div class="quiz__check-wrapper">
                   <input name="quiz-assign" class="quiz__check" type="radio" id="type__fabric"
                          value="multiple">
                   <label class="form-check-label" for="type__fabric">
                     <span class="radio__custom"></span>
                     Производственное</label>
                 </div>
-                <div class="quiz__check-wrapper col-md-3">
+
+                <div class="quiz__check-wrapper">
+                  <input name="quiz-assign" class="quiz__check" type="radio" id="type__multiple"
+                         value="multiple">
+                  <label class="form-check-label" for="type__multiple">
+                    <span class="radio__custom"></span>
+                    Многофункциональное</label>
+                </div>
+                <div class="quiz__check-wrapper">
                   <input name="quiz-assign" class="quiz__check" type="radio" id="type__storage"
                          value="multiple">
                   <label class="form-check-label" for="type__storage">
                     <span class="radio__custom"></span>
                     Складское</label>
                 </div>
-                <div class="quiz__check-wrapper col-md-3">
+                <div class="quiz__check-wrapper">
+                  <input name="quiz-assign" class="quiz__check" type="radio" id="type__road"
+                         value="multiple">
+                  <label class="form-check-label" for="type__road">
+                    <span class="radio__custom"></span>
+                    Объект дорожного сервиса</label>
+                </div>
+                <div class="quiz__check-wrapper">
                   <input name="quiz-assign" class="quiz__check" type="radio" id="type__other"
                          value="other">
                   <label class="form-check-label" for="type__other">
@@ -326,46 +327,45 @@
               </div>
 
             </div>
-            <div class="quiz__block" data-block="3" style="display: none;" >
+            <div class="quiz__block" data-block="3" style="display: none;">
               <p class="quiz__header">3. Укажите этажность объекта:</p>
               <div class="form-check">
-                <div class="quiz__check-wrapper col-md-3">
+                <div class="quiz__check-wrapper">
                   <input name="quiz-flat" class="quiz__check" type="radio" id="flat_1"
                          value="1">
                   <label class="form-check-label" for="flat_1">
                     <span class="radio__custom"></span>
                     1</label>
                 </div>
-                <div class="quiz__check-wrapper col-md-3">
+                <div class="quiz__check-wrapper">
                   <input name="quiz-flat" class="quiz__check" type="radio" id="flat_2"
                          value="admin">
                   <label class="form-check-label" for="flat_2">
                     <span class="radio__custom"></span>
                     2</label>
                 </div>
-                <div class="quiz__check-wrapper col-md-3">
+                <div class="quiz__check-wrapper">
                   <input name="quiz-flat" class="quiz__check" type="radio" id="flat_3"
                          value="multiple">
                   <label class="form-check-label" for="flat_3">
                     <span class="radio__custom"></span>
                     3</label>
                 </div>
-                <div class="quiz__check-wrapper col-md-3">
+                <div class="quiz__check-wrapper">
                   <input name="quiz-flat" class="quiz__check" type="radio" id="flat_4"
                          value="4">
                   <label class="form-check-label" for="flat_4">
                     <span class="radio__custom"></span>
                     4</label>
                 </div>
-
-                <div class="quiz__check-wrapper col-md-3">
+                <div class="quiz__check-wrapper">
                   <input name="quiz-flat" class="quiz__check" type="radio" id="flat_5"
                          value="5">
                   <label class="form-check-label" for="flat_5">
                     <span class="radio__custom"></span>
                     5</label>
                 </div>
-                <div class="quiz__check-wrapper col-md-3">
+                <div class="quiz__check-wrapper">
                   <input name="quiz-flat" class="quiz__check" type="radio" id="flat_more"
                          value="more">
                   <label class="form-check-label" for="flat_more">
@@ -385,61 +385,46 @@
               </div>
 
             </div>
-            <div class="quiz__block" data-block="4"  >
-              <p class="quiz__header">4. Какие документы у вас имеются: <br>
-              <span>выберите несколько вариантов</span></p>
+            <div class="quiz__block quiz__block_docs " data-block="4" style="display: none;">
+              <p class="quiz__header">4. Какие документы у вас имеются:
+                <span>выберите несколько вариантов</span></p>
               <div class="form-check">
-                <div class="quiz__check-wrapper col-md-3">
-                  <input name="quiz-flat" class="quiz__check" type="checkbox" id="docs_gpzu"
+                <div class="quiz__check-wrapper">
+                  <input name="quiz-docs" class="quiz__check" type="checkbox" id="docs_gpzu"
                          value="1">
                   <label class="form-check-label" for="docs_gpzu">
                     <span class="radio__custom"></span>
                     ГПЗУ</label>
                 </div>
-                <div class="quiz__check-wrapper col-md-3">
-                  <input name="quiz-flat" class="quiz__check" type="radio" id="zu_docs"
-                         value="zu_docs">
-                  <label class="form-check-label" for="zu_docs">
+                <div class="quiz__check-wrapper">
+                  <input name="quiz-docs" class="quiz__check" type="checkbox" id="docs_sketch"
+                         value="1">
+                  <label class="form-check-label" for="docs_sketch">
                     <span class="radio__custom"></span>
-                    Правоустанавливающие документы на з.у.</label>
+                    Эскизный проект</label>
                 </div>
-                <div class="quiz__check-wrapper col-md-3">
-                  <input name="quiz-flat" class="quiz__check" type="radio" id="flat_3"
+                <div class="quiz__check-wrapper">
+                  <input name="quiz-docs" class="quiz__check" type="checkbox" id="docs_rule"
                          value="multiple">
-                  <label class="form-check-label" for="flat_3">
+                  <label class="form-check-label" for="docs_rule">
                     <span class="radio__custom"></span>
-                    3</label>
+                    Правоустанавливающие документы на з.у. </label>
                 </div>
-                <div class="quiz__check-wrapper col-md-3">
-                  <input name="quiz-flat" class="quiz__check" type="radio" id="flat_4"
+                <div class="quiz__check-wrapper">
+                  <input name="quiz-docs" class="quiz__check" type="checkbox" id="docs-shoot"
                          value="4">
-                  <label class="form-check-label" for="flat_4">
+                  <label class="form-check-label" for="docs-shoot">
                     <span class="radio__custom"></span>
-                    4</label>
-                </div>
-
-                <div class="quiz__check-wrapper col-md-3">
-                  <input name="quiz-flat" class="quiz__check" type="radio" id="flat_5"
-                         value="5">
-                  <label class="form-check-label" for="flat_5">
-                    <span class="radio__custom"></span>
-                    5</label>
-                </div>
-                <div class="quiz__check-wrapper col-md-3">
-                  <input name="quiz-flat" class="quiz__check" type="radio" id="flat_more"
-                         value="more">
-                  <label class="form-check-label" for="flat_more">
-                    <span class="radio__custom"></span>
-                    Более 5ти</label>
+                    Топографическая съемка</label>
                 </div>
               </div>
 
 
               <div class="quiz__buttons-block">
-                <div class="btn quiz__btn quiz__btn_prev" data-slide="prev" data-target="2">
+                <div class="btn quiz__btn quiz__btn_prev" data-slide="prev" data-target="3">
                   <span class="btn__arrow btn__arrow_prev"></span>Назад
                 </div>
-                <div class="btn quiz__btn quiz__btn_next btn_inactive" data-slide="next" data-target="4"
+                <div class="btn quiz__btn quiz__btn_next btn_inactive" data-slide="next" data-target="5"
                      disabled="disabled">Следующий
                   вопрос
                   <span class="btn__arrow"></span>
@@ -447,7 +432,141 @@
               </div>
 
             </div>
+            <div class="quiz__block quiz__block_docs " data-block="5" style="display: none;">
+              <p class="quiz__header">5. Земельный участок имеет примыкание к дороге:
+                <span>выберите несколько вариантов</span></p>
+              <div class="form-check">
+                <div class="quiz__check-wrapper">
+                  <input name="quiz-road" class="quiz__check" type="checkbox" id="road_federal"
+                         value="1">
+                  <label class="form-check-label" for="road_federal">
+                    <span class="radio__custom"></span>
+                    К федеральной</label>
+                </div>
+                <div class="quiz__check-wrapper">
+                  <input name="quiz-road" class="quiz__check" type="checkbox" id="road_regional"
+                         value="1">
+                  <label class="form-check-label" for="road_regional">
+                    <span class="radio__custom"></span>
+                    К региональной</label>
+                </div>
+                <div class="quiz__check-wrapper">
+                  <input name="quiz-road" class="quiz__check" type="checkbox" id="road_municipal"
+                         value="1">
+                  <label class="form-check-label" for="road_municipal">
+                    <span class="radio__custom"></span>
+                    К муниципальной</label>
+                </div>
+                <div class="quiz__check-wrapper">
+                  <input name="quiz-road" class="quiz__check" type="checkbox" id="road_undefined"
+                         value="1">
+                  <label class="form-check-label" for="road_undefined">
+                    <span class="radio__custom"></span>
+                    Требуется уточнение</label>
+                </div>
+
+              </div>
+
+
+              <div class="quiz__buttons-block">
+                <div class="btn quiz__btn quiz__btn_prev" data-slide="prev" data-target="4">
+                  <span class="btn__arrow btn__arrow_prev"></span>Назад
+                </div>
+                <div class="btn quiz__btn quiz__btn_next btn_inactive" data-slide="next" data-target="6"
+                     disabled="disabled">Следующий
+                  вопрос
+                  <span class="btn__arrow"></span>
+                </div>
+              </div>
+
+            </div>
+            <div class="quiz__block" data-block="6" style="display: none;">
+              <p class="quiz__header">6. Укажите дополнительную информацию об объекте:</p>
+              <textarea class="quiz__textarea" cols="30" rows="10" placeholder="Введите текст"></textarea>
+              <div class="quiz__buttons-block">
+                <div class="btn quiz__btn quiz__btn_prev" data-slide="prev" data-target="5">
+                  <span class="btn__arrow btn__arrow_prev"></span>Назад
+                </div>
+                <div class="btn quiz__btn quiz__btn_next" data-slide="next" data-target="7"
+                     disabled="disabled">Следующий
+                  вопрос
+                  <span class="btn__arrow"></span>
+                </div>
+              </div>
+
+            </div>
+            <div class="quiz__block quiz__block_result" style="display: none;" data-block="7">
+              <p class="quiz__header">Остался последний шаг! Оставьте контактные данные и мы направим вам коммерческое
+                предложение в течении 60 минут.
+              </p>
+              <div class="quiz__result-wrapper">
+                <div class="quiz__result-left">
+                  <div class="form-group">
+                    <input class="quiz__input" type="text" placeholder="Имя:">
+                  </div>
+                  <div class="form-group">
+                    <input class="quiz__input" type="text" placeholder="Телефон:">
+                  </div>
+                  <div class="form-group">
+                    <input class="quiz__input" type="email" placeholder="Email:">
+                  </div>
+                  <button class="btn quiz__btn quiz__btn_next quiz__btn_result">Узнать стоимость
+                    <span class="btn__arrow"></span>
+                  </button>
+                  <p class="quiz__agree">
+                    Нажимая даную кнопку, вы соглашаетесь с <a href="#">политикой конфиденциальности</a>
+                  </p>
+                </div>
+                <div class="quiz__result-right">
+                  <div class="quiz__result-image">
+                    <img src="images/papers-result.png" alt="Документы">
+                  </div>
+                  <div class="quiz__result-text">
+                    + обещанный бонус “Полезный файл” - чек лист при выборе земельного участка
+                  </div>
+                </div>
+
+              </div>
+            </div>
           </form>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal modal_quiz fade" id="modal-quiz-success" tabindex="-1" role="dialog"
+     aria-hidden="true">
+  <div class="container">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+        </button>
+        <div class="modal-body">
+          <div class="quiz__success-wrapper">
+            <div class="quiz__success_left">
+              <p class="quiz__header">
+                Спасибо, что оставили заявку!
+              </p>
+              <p class="quiz__header">
+                Мы свяжемся с вами в течении 60 минут!
+              </p>
+              <p class="quiz__success-file">
+                Файл “6 вещей, на которые стоит обратить внимание при выборе участка” придет на почту в течении 10 минут!
+              </p>
+              <p class="quiz__success-subscribe">
+                Подпишитесь на наши странички в социальных сетях, чтобы следить за обновлениями и акциями:
+              </p>
+              <div class="quiz__success-socials">
+                <a class="quiz__social-link quiz__social-link_ig " href="#"></a>
+                <a class="quiz__social-link quiz__social-link_fb " href="#"></a>
+                <a class="quiz__social-link quiz__social-link_vk " href="#"></a>
+              </div>
+            </div>
+            <div class="quiz__success-right">
+              <img src="images/papers-success.png" alt="Документы">
+            </div>
+          </div>
 
         </div>
       </div>
@@ -499,6 +618,7 @@
     height: 34px;
     background: #b92e1c;
     border: 2px solid #000000;
+    border-radius: 0;
     cursor: pointer;
   }
 
@@ -549,6 +669,19 @@
     input[type=range] {
       margin: 0;
       /*Edge starts the margin from the thumb, not the track as other browsers do*/
+    }
+  }
+  @media screen and (max-width: 576px) {
+    input[type=range]::-webkit-slider-thumb {
+      width: 21px;
+      height: 21px;
+      margin-top: -10.5px;
+      margin-left: -16px;
+    }
+    input[type=range] {
+      margin-top: 0;
+      margin-bottom: 0;
+      margin-right: 0;
     }
   }
 
